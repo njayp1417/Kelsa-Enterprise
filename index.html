@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelsa Enterprise - Ticket Booking & Accessories</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/kelsa logo.webp" alt="Kelsa Enterprise Logo">
+            <span>Kelsa Enterprise</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#logistics">Logistics</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Kelsa Enterprise</h1>
+                <p>Book your flight tickets and shop for premium in-flight accessories</p>
+                <div class="cta-buttons">
+                    <a href="#tickets" class="btn primary">Book Tickets</a>
+                    <a href="#accessories" class="btn secondary">Shop Accessories</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="booking-section">
+            <h2>Book Your Flight</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="departure">Departure (Nigerian State)</label>
+                    <input type="text" id="departure" list="nigerian-states" placeholder="Enter a Nigerian state" required>
+                    <datalist id="nigerian-states">
+                        <option value="Abia">
+                        <option value="Adamawa">
+                        <option value="Akwa Ibom">
+                        <option value="Anambra">
+                        <option value="Bauchi">
+                        <option value="Bayelsa">
+                        <option value="Benue">
+                        <option value="Borno">
+                        <option value="Cross River">
+                        <option value="Delta">
+                        <option value="Ebonyi">
+                        <option value="Edo">
+                        <option value="Ekiti">
+                        <option value="Enugu">
+                        <option value="FCT Abuja">
+                        <option value="Gombe">
+                        <option value="Imo">
+                        <option value="Jigawa">
+                        <option value="Kaduna">
+                        <option value="Kano">
+                        <option value="Katsina">
+                        <option value="Kebbi">
+                        <option value="Kogi">
+                        <option value="Kwara">
+                        <option value="Lagos">
+                        <option value="Nasarawa">
+                        <option value="Niger">
+                        <option value="Ogun">
+                        <option value="Ondo">
+                        <option value="Osun">
+                        <option value="Oyo">
+                        <option value="Plateau">
+                        <option value="Rivers">
+                        <option value="Sokoto">
+                        <option value="Taraba">
+                        <option value="Yobe">
+                        <option value="Zamfara">
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" list="destinations" placeholder="Enter a destination" required>
+                    <datalist id="destinations">
+                        <!-- Nigerian States -->
+                        <option value="Abia, Nigeria">
+                        <option value="Adamawa, Nigeria">
+                        <option value="Akwa Ibom, Nigeria">
+                        <option value="Anambra, Nigeria">
+                        <option value="Bauchi, Nigeria">
+                        <option value="Bayelsa, Nigeria">
+                        <option value="Benue, Nigeria">
+                        <option value="Borno, Nigeria">
+                        <option value="Cross River, Nigeria">
+                        <option value="Delta, Nigeria">
+                        <option value="Ebonyi, Nigeria">
+                        <option value="Edo, Nigeria">
+                        <option value="Ekiti, Nigeria">
+                        <option value="Enugu, Nigeria">
+                        <option value="FCT Abuja, Nigeria">
+                        <option value="Gombe, Nigeria">
+                        <option value="Imo, Nigeria">
+                        <option value="Jigawa, Nigeria">
+                        <option value="Kaduna, Nigeria">
+                        <option value="Kano, Nigeria">
+                        <option value="Katsina, Nigeria">
+                        <option value="Kebbi, Nigeria">
+                        <option value="Kogi, Nigeria">
+                        <option value="Kwara, Nigeria">
+                        <option value="Lagos, Nigeria">
+                        <option value="Nasarawa, Nigeria">
+                        <option value="Niger, Nigeria">
+                        <option value="Ogun, Nigeria">
+                        <option value="Ondo, Nigeria">
+                        <option value="Osun, Nigeria">
+                        <option value="Oyo, Nigeria">
+                        <option value="Plateau, Nigeria">
+                        <option value="Rivers, Nigeria">
+                        <option value="Sokoto, Nigeria">
+                        <option value="Taraba, Nigeria">
+                        <option value="Yobe, Nigeria">
+                        <option value="Zamfara, Nigeria">
+                        
+                        <!-- African Countries -->
+                        <option value="Accra, Ghana">
+                        <option value="Nairobi, Kenya">
+                        <option value="Johannesburg, South Africa">
+                        <option value="Cairo, Egypt">
+                        <option value="Addis Ababa, Ethiopia">
+                        <option value="Dakar, Senegal">
+                        <option value="Casablanca, Morocco">
+                        
+                        <!-- International Destinations -->
+                        <option value="London, UK">
+                        <option value="Dubai, UAE">
+                        <option value="New York, USA">
+                        <option value="Paris, France">
+                        <option value="Beijing, China">
+                        <option value="Tokyo, Japan">
+                        <option value="Sydney, Australia">
+                        <option value="Toronto, Canada">
+                        <option value="Mumbai, India">
+                        <option value="Rio de Janeiro, Brazil">
+                    </datalist>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date</label>
+                        <input type="date" id="departure-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults</label>
+                        <input type="number" id="adults" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <input type="number" id="children" min="0" value="0">
+                    </div>
+                </div>
+                <button type="submit" class="btn primary">Search Flights</button>
+            </form>
+        </section>
+
+        <section id="accessories" class="products-section">
+            <h2>In-Flight Accessories</h2>
+            <div class="products-grid">
+                <div class="product-card" data-id="1">
+                    <img src="assets/images/neck-pillow.webp" alt="Neck Pillow">
+                    <h3>Travel Neck Pillow</h3>
+                    <p>Memory foam neck support for comfortable sleep during flights</p>
+                    <p class="price">₦18,500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-id="2">
+                    <img src="assets/images/sleeping-mask.webp" alt="Sleep Mask">
+                    <h3>Sleep Mask</h3>
+                    <p>Blackout eye mask for undisturbed rest</p>
+                    <p class="price">₦9,750</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-id="3">
+                    <img src="assets/images/travel blanket.webp" alt="Travel Blanket">
+                    <h3>Compact Travel Blanket</h3>
+                    <p>Soft, lightweight blanket that folds into a small pouch</p>
+                    <p class="price">₦14,900</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-id="4">
+                    <img src="assets/images/luggage-bag.webp" alt="Luggage Bag">
+                    <h3>Smart Luggage Bag</h3>
+                    <p>Durable luggage bag with built-in tracking</p>
+                    <p class="price">₦27,500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-id="5">
+                    <img src="assets/images/kelsa logo.webp" alt="Travel Adapter">
+                    <h3>Universal Travel Adapter</h3>
+                    <p>All-in-one adapter with USB ports for international travel</p>
+                    <p class="price">₦12,200</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-id="6">
+                    <img src="assets/images/header.webp" alt="Passport Holder">
+                    <h3>Nigerian Flag Passport Holder</h3>
+                    <p>Stylish passport holder with RFID protection</p>
+                    <p class="price">₦8,300</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="logistics" class="logistics-section">
+            <h2>Logistics & Delivery</h2>
+            <div class="logistics-info">
+                <div class="logistics-card">
+                    <h3>Delivery Options</h3>
+                    <ul>
+                        <li><strong>Airport Pickup:</strong> Collect your accessories at the departure gate</li>
+                        <li><strong>In-Flight Delivery:</strong> Receive your items during your flight</li>
+                        <li><strong>Home Delivery:</strong> Get items delivered to your address before travel</li>
+                    </ul>
+                </div>
+                <div class="logistics-card">
+                    <h3>Shipping Information</h3>
+                    <p>For home delivery, please allow:</p>
+                    <ul>
+                        <li>1-2 business days for local addresses</li>
+                        <li>3-5 business days for nationwide shipping</li>
+                        <li>7-14 business days for international shipping</li>
+                    </ul>
+                </div>
+                <div class="logistics-card">
+                    <h3>Track Your Order</h3>
+                    <p>After placing your order via WhatsApp, you'll receive:</p>
+                    <ul>
+                        <li>Order confirmation with details</li>
+                        <li>Tracking information when shipped</li>
+                        <li>Delivery notification</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p id="empty-cart-message">Your cart is empty</p>
+            </div>
+            <div class="cart-summary">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal-amount">₦0.00</span>
+                </div>
+                <button id="checkout-btn" class="btn primary">Checkout via WhatsApp</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kelsa Enterprise</h3>
+                <p>Your one-stop solution for flight bookings and travel accessories.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@kelsaenterprise.ng</p>
+                <p>Phone: +234 801 234 5678</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Kelsa Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
